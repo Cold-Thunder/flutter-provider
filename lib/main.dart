@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:provider_app/activites/Home.dart';
 import 'package:provider_app/providers/changing_prov.dart';
 import 'package:provider_app/providers/counter_provider.dart';
+import 'package:provider_app/providers/practice_provider.dart';
 import 'package:provider_app/providers/user_name.dart';
 import 'package:provider_app/providers/users_data.dart';
 
@@ -29,6 +30,9 @@ class MyApp extends StatelessWidget {
           ),
           ChangeNotifierProvider(
             create: (create)=> changing(),
+          ),
+          ChangeNotifierProvider(
+            create: (create)=>practice_provider()
           )
         ],
         child: MaterialApp(

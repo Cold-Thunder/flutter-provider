@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:provider_app/activites/Changing.dart';
 import 'package:provider_app/activites/Editing.dart';
 import 'package:provider_app/activites/LogIn.dart';
+import 'package:provider_app/activites/PracticePro.dart';
 import 'package:provider_app/providers/counter_provider.dart';
 import 'package:provider_app/providers/user_name.dart';
 import 'package:provider_app/providers/users_data.dart';
@@ -91,6 +92,20 @@ class _Home extends State<Home>{
                               onPressed: (){
                                 Navigator.push( context,
                                     MaterialPageRoute(builder: (context)=> Changing())
+                                );
+                              }
+                          ),
+                          ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.blue
+                              ),
+                              child: Text('Go to Practice', style: TextStyle(
+                                  fontSize: 22,
+                                  color: Colors.white
+                              )),
+                              onPressed: (){
+                                Navigator.push( context,
+                                    MaterialPageRoute(builder: (context)=> Practicepro())
                                 );
                               }
                           )
